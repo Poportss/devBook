@@ -5,11 +5,11 @@ import (
 	"net/http"
 )
 
-var rotasUsarios = []Rota{
+var rotasUsuarios = []Rota{
 	{
 		URI:                "/usuarios",
 		Metodo:             http.MethodPost,
-		Funcao:             controllers.CriarUsuarios,
+		Funcao:             controllers.CriarUsuario,
 		RequerAutenticacao: false,
 	},
 	{
@@ -50,7 +50,7 @@ var rotasUsarios = []Rota{
 	},
 	{
 		URI:                "/usuarios/{usuarioId}/seguidores",
-		Metodo:             http.MethodGet,	
+		Metodo:             http.MethodGet,
 		Funcao:             controllers.BuscarSeguidores,
 		RequerAutenticacao: true,
 	},

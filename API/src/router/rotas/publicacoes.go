@@ -8,7 +8,7 @@ import (
 var rotasPublicacoes = []Rota{
 	{
 		URI:                "/publicacoes",
-		Metodo:             http.MethodGet,
+		Metodo:             http.MethodPost,
 		Funcao:             controllers.CriarPublicacao,
 		RequerAutenticacao: true,
 	},
@@ -37,19 +37,19 @@ var rotasPublicacoes = []Rota{
 		RequerAutenticacao: true,
 	},
 	{
-		URI:                "/ususarios/{ususrioId}/publicacoes",
+		URI:                "/usuarios/{usuarioId}/publicacoes",
 		Metodo:             http.MethodGet,
 		Funcao:             controllers.BuscarPublicacoesPorUsuario,
 		RequerAutenticacao: true,
 	},
 	{
-		URI:                "publicacoes/publicacaoId}/curtir",
+		URI:                "/publicacoes/{publicacaoId}/curtir",
 		Metodo:             http.MethodPost,
 		Funcao:             controllers.CurtirPublicacao,
 		RequerAutenticacao: true,
 	},
 	{
-		URI:                "publicacoes/publicacaoId}/descurtir",
+		URI:                "/publicacoes/{publicacaoId}/descurtir",
 		Metodo:             http.MethodPost,
 		Funcao:             controllers.DescurtirPublicacao,
 		RequerAutenticacao: true,
