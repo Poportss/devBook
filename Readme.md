@@ -6,9 +6,8 @@ DevBook é um sistema de postagem desenvolvido para compartilhar ideias, projeto
 
 - **Backend**: Go (Golang) + GORM
 - **Banco de Dados**: PostgreSQL
-- **Frontend**: HTML, CSS, JavaScript (Framework a definir)
+- **Frontend**: HTML, CSS, JavaScript
 - **Autenticação**: JWT
-- **Conversão de HTML para PDF**: Gotenberg v6
 
 ## Funcionalidades
 
@@ -16,7 +15,6 @@ DevBook é um sistema de postagem desenvolvido para compartilhar ideias, projeto
 - Curtidas e comentários em postagens
 - Autenticação de usuários via JWT
 - Listagem de postagens
-- Exportação de conteúdo em PDF
 
 ## Instalação e Execução
 
